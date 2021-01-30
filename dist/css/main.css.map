@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,oDAAoD;AACpD,OAAO,CAAC,qTAAI;AAIZ,+CAA+C",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/_navbar.scss",
+        "../../scss/_base.scss",
+        "../../scss/_components.scss",
+        "../../scss/_layout.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
