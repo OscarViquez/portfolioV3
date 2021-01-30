@@ -1,2 +1,7 @@
 # portfolioV3
-third version if my portfolio
+third version of my portfolio
+
+Read me is a work in progress
+
+
+https://undraw.co/illustrations

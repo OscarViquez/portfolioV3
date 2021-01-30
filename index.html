@@ -16,6 +16,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
         </script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Site</title>
 </head>
 
@@ -23,31 +26,33 @@
     <!-- NAVBAR  -->
     <nav class="navbar">
         <div class="content">
-            <div class="logo">
+            <div class="logo animate__animated animate__bounceIn animate__delay-1s">
                 <a class="menu-item" href="#">OHV</a>
             </div>
             <ul class="menu-list">
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
-                <li><a class="menu-item" href="#Intro">Home</a></li>
+                <li><a class="menu-item " href="#Intro">Home</a></li>
                 <li><a class="menu-item" href="#About">About</a></li>
                 <li><a class="menu-item" href="#Card-1">Project</a></li>
                 <li><a class="menu-item" href="#Contact">Contact</a></li>
             </ul>
-            <div class="icon menu-btn">
+            <div class="icon menu-btn animate__animated animate__bounceIn animate__fast">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
     <!-- Introduction  -->
     <section class="Intro" id="Intro">
-        <h1 class="Intro-name">Oscar Viquez</h1>
-        <h3 class="Intro-job">Front-End Web Developer</h3>
+        <h1 class="Intro-name  animate__animated animate__bounceIn animate__faster">Oscar Viquez</h1>
+        <h3 class="Intro-job  animate__animated animate__bounceIn animate__fast">Front-End Web Developer</h3>
         <!-- <h3 class="Intro-details">that specializes in HTML, CSS & SASS, JQuery, React.js and PHP, </h3> -->
-        <h3 class="Intro-details"> Based in <strong class="Intro-detail-city">Atlanta, Georgia</strong> </h3>
+        <h3 class="Intro-details  animate__animated animate__bounceIn animate__delay-1s"> Based in <strong class="Intro-detail-city">Atlanta, Georgia</strong> </h3>
+        <img src="/svg/gummy-programming.svg" class="Intro-img  animate__animated animate__rollIn" />
+        
         <a href="#Card-1_container">
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down animate__animated animate__bounceIn animate__fast"></i>
         </a>
     </section>
 
@@ -163,7 +168,7 @@
     </section>
 
     <!-- Javascript  -->
-    <script type="module" src="js/index.js"></script>
+    <script type="module" src="index.js"></script>
 
 
 </body>

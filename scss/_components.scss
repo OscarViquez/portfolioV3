@@ -1,0 +1,17 @@
+@import "_base.scss";
+
+@media (max-width: 680px) {
+  .fa-chevron-down {
+    font-size: size(regular);
+    color: $primary-color;
+    margin: 1rem 0 0 0;
+  }
+}
+@media (max-width: 380px) {
+  .fa-chevron-down {
+    // Fonts
+    font-size: size(regular);
+    color: $primary-color;
+
+  }
+}

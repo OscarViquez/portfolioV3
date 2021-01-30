@@ -1,0 +1,190 @@
+@import "_base.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* __ I n t r o - S e c t i o n ______________________________ */
+.Intro {
+  // Spacing
+  padding: 25rem 30rem;
+  color: $white;
+  // margin: 25rem 20rem;
+  background: $black;
+
+  .Intro-name {
+    // Font
+    font-family: $Poppins;
+    font-size: size(mega-large);
+    font-weight: weight(bold);
+  }
+
+  .Intro-job {
+    // Font
+    font-family: $Poppins;
+    font-size: size(large);
+    font-weight: weight(bold);
+    // Font Color
+    color: $primary-color;
+    // Spacing
+    margin: 1rem 0;
+  }
+
+  .Intro-details {
+    // Font
+    font-family: $Poppins;
+    font-size: size(medium);
+    font-weight: weight(medium);
+    // Spacing
+    margin: 1rem 0;
+  }
+
+  .Intro-img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* ______________ Laptop Screen Size */
+@media (max-width: 1100px) {
+  .Intro {
+    .Intro-name {
+      // Font
+    }
+
+    .Intro-job {
+      // Font
+
+      // Spacing
+    }
+
+    .Intro-details {
+      // Font
+
+      // Spacing
+    }
+  }
+}
+
+/* ______________ Mid-size tablet Screen Size */
+@media (max-width: 900px) {
+  .Intro {
+    // spacing
+  }
+}
+
+/* ______________  iPad / Tablet Screen size */
+@media (max-width: 868px) {
+  .Intro {
+    // spacing
+
+    .Intro-name {
+      // Font
+    }
+
+    .Intro-job {
+      // Font
+
+      // Spacing
+    }
+
+    .Intro-details {
+      // Font
+
+      // Spacing
+    }
+  }
+}
+
+/* ______________ Larger Phones Screen size */
+@media (max-width: 680px) {
+  .Intro {
+    text-align: center;
+    padding: 7rem 1rem 10rem;
+
+    .Intro-name {
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(med-large);
+      font-weight: weight(medium);
+
+      margin: 5rem 0 1rem 0;
+      // padding: 5rem 0;
+    }
+
+    .Intro-job {
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(medium);
+      color: $primary-color;
+      // Spacing
+      margin: 1rem 0rem;
+    }
+
+    .Intro-details {
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(small);
+      font-weight: weight(med-low);
+
+      // Spacing
+      margin: 1rem 0rem;
+
+      .fa-chevron-down {
+        // Spacing
+        margin: 1rem 0 0 0;
+        padding: 0rem 0 0 0;
+      }
+    }
+  }
+
+  /* ______________ Smaller Phones Screen size */
+  @media (max-width: 380px) {
+    .Intro {
+      text-align: center;
+      padding: 5rem 1rem 10rem;
+
+      .Intro-name {
+        // Font/ Text Styling
+        font-family: $Poppins;
+        font-size: size(regular);
+        font-weight: weight(medium);
+
+        // Spacing
+        margin: 5rem 0 1rem 0;
+        // padding: 5rem 0;
+      }
+
+      .Intro-job {
+        // Font/ Text Styling
+        font-family: $Poppins;
+        font-size: size(medium);
+        font-weight: weight(medium);
+        color: $primary-color;
+        // Spacing
+        margin: 1rem 0rem;
+      }
+
+      .Intro-details {
+        // Font/ Text Styling
+        font-family: $Poppins;
+        font-size: size(xtra-small);
+        font-weight: weight(med-low);
+
+        // Spacing
+        margin: 1rem 0rem;
+
+        .fa-chevron-down {
+          // Spacing
+          margin: 1rem 0 0 0;
+          padding: 0rem 0 0 0;
+        }
+      }
+    }
+  }
+}
+/* __ P r o j e c t - S e c t i o n ______________________________ */
+
+/* __ A b o u t - S e c t i o n __________________________________ */
+
+/* __ C o n t a c t - S e c t i o n ______________________________ */
