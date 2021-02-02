@@ -94,7 +94,7 @@
 }
 
 .menu-list li a {
-  color: #1b1b1b;
+  color: whitesmoke;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -124,14 +124,24 @@
   .content {
     padding: 0 60px;
   }
+  .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 1100px) {
   .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .content {
     padding: 0 40px;
   }
   .menu-list li a {
-    color: #1b1b1b;
+    color: whitesmoke;
   }
   .cancel-btn {
     color: #fff;
@@ -198,18 +208,89 @@
 /* Typography ______________________________ */
 /* Google Font API ______________________________ */
 /* Typography ______________________________ */
-@media (max-width: 680px) {
+.Scroll-group {
+  font-family: "Poppins", sans-serif;
+  color: #713eff;
+  margin: 1rem 0 0 0;
+  text-decoration: none;
+}
+
+.fa-chevron-down {
+  font-size: 35px;
+  color: #713eff;
+  margin: 1rem 0 0 0;
+}
+
+.Scroll-Text {
+  color: #713eff;
+  font-weight: 400;
+}
+
+@media (min-width: 1500px) {
+  .Scroll-group {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
   .fa-chevron-down {
-    font-size: 35px;
-    color: #713eff;
+    font-size: 45px;
+    margin: 1rem 0 0 0;
+  }
+  .Scroll-Text {
+    font-size: 25px;
+    font-weight: 550;
     margin: 1rem 0 0 0;
   }
 }
 
+/* ______________ Mid-size tablet Screen Size */
+@media (max-width: 1100px) {
+  .fa-chevron-down {
+    font-size: 45px;
+    margin: 1rem 0 0 0;
+  }
+  .Scroll-Text {
+    font-size: 25px;
+    font-weight: 550;
+    margin: 1rem 0 0 0;
+  }
+}
+
+/* ______________  iPad / Tablet Screen size */
+@media (max-width: 868px) {
+  .fa-chevron-down {
+    font-size: 35px;
+    margin: 1rem 0 0 0;
+  }
+  .Scroll-Text {
+    font-size: 25px;
+    font-weight: 550;
+    margin: 1rem 0 0 0;
+  }
+}
+
+/* ______________ Larger Phones Screen size */
+@media (max-width: 680px) {
+  .fa-chevron-down {
+    font-size: 35px;
+    margin: 1rem 0 0 0;
+  }
+  .Scroll-Text {
+    font-size: 20px;
+    margin: 1rem 0 0 0;
+  }
+}
+
+/* ______________ Smaller Phones Screen size */
 @media (max-width: 380px) {
   .fa-chevron-down {
     font-size: 35px;
-    color: #713eff;
+    margin: 0;
+  }
+  .Scroll-Text {
+    font-size: 16px;
+    margin: 1rem 0 0 0;
   }
 }
 
@@ -221,20 +302,20 @@ html {
 
 /* __ I n t r o - S e c t i o n ______________________________ */
 .Intro {
-  padding: 25rem 30rem;
+  padding: 0;
   color: whitesmoke;
   background: #1b1b1b;
 }
 
 .Intro .Intro-name {
   font-family: "Poppins", sans-serif;
-  font-size: 75px;
+  font-size: 55px;
   font-weight: 700;
 }
 
 .Intro .Intro-job {
   font-family: "Poppins", sans-serif;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 700;
   color: #713eff;
   margin: 1rem 0;
@@ -248,13 +329,138 @@ html {
 }
 
 .Intro .Intro-img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
-/* ______________ Laptop Screen Size */
+@media (min-width: 1500px) {
+  .Intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Intro-content {
+    padding: 30rem 0 0 0;
+  }
+  .Intro-name {
+    /* Used Background colors to Visualize the sizes of the elements
+     in other words, used them to solve a problem in which the elements would be located in weird places */
+    padding: 1rem 5rem 1rem 10rem;
+  }
+  .Intro-job {
+    padding: 1rem 5rem 1rem 10rem;
+  }
+  .Intro-details {
+    padding: 1rem 5rem 1rem 10rem;
+  }
+  .Intro-img {
+    padding: 0 0 10rem 0;
+  }
+}
+
+/* ______________ Laptop / iPad Pro Screen Size */
+@media (max-width: 1500px) {
+  .Intro {
+    text-align: center;
+    padding: 12rem 1rem 10rem;
+  }
+  .Intro .Intro-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 55px;
+    font-weight: 550;
+  }
+  .Intro .Intro-job {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+    color: #713eff;
+    margin: 1rem 0rem;
+  }
+  .Intro .Intro-details {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 1rem 0rem;
+  }
+  .Intro .Intro-img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .Intro {
+    text-align: center;
+    padding: 12rem 1rem 10rem;
+  }
+  .Intro .Intro-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 55px;
+    font-weight: 550;
+  }
+  .Intro .Intro-job {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+    color: #713eff;
+    margin: 1rem 0rem;
+  }
+  .Intro .Intro-details {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 1rem 0rem;
+  }
+  .Intro .Intro-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
 /* ______________ Mid-size tablet Screen Size */
+@media (max-width: 900px) {
+  .Intro {
+    text-align: center;
+    padding: 12rem 1rem 10rem;
+  }
+}
+
 /* ______________  iPad / Tablet Screen size */
+@media (max-width: 868px) {
+  .Intro {
+    text-align: center;
+    padding: 12rem 1rem 10rem;
+  }
+  .Intro .Intro-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+  }
+  .Intro .Intro-img {
+    width: 100%;
+    height: auto;
+  }
+  .Intro .Intro-job {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 550;
+    color: #713eff;
+    margin: 1rem 0rem;
+  }
+  .Intro .Intro-details {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 1rem 0rem;
+  }
+  .Intro .fa-chevron-down {
+    margin: 1rem 0 0 0;
+    padding: 0rem 0 0 0;
+  }
+}
+
 /* ______________ Larger Phones Screen size */
 @media (max-width: 680px) {
   .Intro {

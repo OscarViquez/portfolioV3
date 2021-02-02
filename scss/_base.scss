@@ -34,6 +34,7 @@ $Poppins: 'Poppins', sans-serif;
 @function weight($weight-name) {
   @return map-get($font-weights, $weight-name);
 }
+
 @function size($weight-name) {
   @return map-get($font-size, $weight-name);
 }

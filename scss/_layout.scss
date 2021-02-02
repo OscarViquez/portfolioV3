@@ -5,24 +5,25 @@ html {
 }
 
 /* __ I n t r o - S e c t i o n ______________________________ */
+
 .Intro {
   // Spacing
-  padding: 25rem 30rem;
+  padding: 0;
+
   color: $white;
-  // margin: 25rem 20rem;
   background: $black;
 
   .Intro-name {
     // Font
     font-family: $Poppins;
-    font-size: size(mega-large);
+    font-size: size(large);
     font-weight: weight(bold);
   }
 
   .Intro-job {
     // Font
     font-family: $Poppins;
-    font-size: size(large);
+    font-size: size(med-large);
     font-weight: weight(bold);
     // Font Color
     color: $primary-color;
@@ -40,27 +41,126 @@ html {
   }
 
   .Intro-img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 }
-/* ______________ Laptop Screen Size */
-@media (max-width: 1100px) {
+
+@media (min-width: 1500px) {
   .Intro {
+    // Using F l e x to arrange the elements in rows
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Intro-content {
+    // margin outside
+    // padding inside
+    padding: 30rem 0 0 0;
+    // background: rgb(67, 128, 186);
+  }
+
+  .Intro-name {
+    /* Used Background colors to Visualize the sizes of the elements
+     in other words, used them to solve a problem in which the elements would be located in weird places */
+    padding: 1rem 5rem 1rem 10rem;
+    // background: rgb(143, 39, 39);
+  }
+
+  .Intro-job {
+    // Font
+    padding: 1rem 5rem 1rem 10rem;
+    // background: rgb(213, 121, 34);
+  }
+
+  .Intro-details {
+    // Font
+    padding: 1rem 5rem 1rem 10rem;
+    // background: rgb(89, 202, 108);
+  }
+
+  .Intro-img {
+    padding: 0 0 10rem 0;
+    // background: rgb(219, 240, 223);
+  }
+}
+
+/* ______________ Laptop / iPad Pro Screen Size */
+@media (max-width: 1500px) {
+  .Intro {
+    // Spacing
+    text-align: center;
+    padding: 12rem 1rem 10rem;
+
     .Intro-name {
-      // Font
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(large);
+      font-weight: weight(medium);
     }
 
     .Intro-job {
-      // Font
-
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(med-large);
+      font-weight: weight(medium);
+      color: $primary-color;
+      // Spacing
+      margin: 1rem 0rem;
       // Spacing
     }
 
     .Intro-details {
-      // Font
-
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(med-low);
       // Spacing
+      margin: 1rem 0rem;
+    }
+
+    .Intro-img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .Intro {
+    // Spacing
+    text-align: center;
+    padding: 12rem 1rem 10rem;
+
+    .Intro-name {
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(large);
+      font-weight: weight(medium);
+    }
+
+    .Intro-job {
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(med-large);
+      font-weight: weight(medium);
+      color: $primary-color;
+      // Spacing
+      margin: 1rem 0rem;
+      // Spacing
+    }
+
+    .Intro-details {
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(med-low);
+      // Spacing
+      margin: 1rem 0rem;
+    }
+
+    .Intro-img {
+      width: 80%;
+      height: auto;
     }
   }
 }
@@ -68,29 +168,55 @@ html {
 /* ______________ Mid-size tablet Screen Size */
 @media (max-width: 900px) {
   .Intro {
-    // spacing
+    // Spacing
+    text-align: center;
+    padding: 12rem 1rem 10rem;
   }
 }
 
 /* ______________  iPad / Tablet Screen size */
 @media (max-width: 868px) {
   .Intro {
-    // spacing
-
+    // Spacing
+    text-align: center;
+    padding: 12rem 1rem 10rem;
     .Intro-name {
-      // Font
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(med-large);
+      font-weight: weight(medium);
+    }
+
+    .Intro-img {
+      width: 100%;
+      height: auto;
     }
 
     .Intro-job {
-      // Font
-
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(regular);
+      font-weight: weight(medium);
+      color: $primary-color;
+      // Spacing
+      margin: 1rem 0rem;
       // Spacing
     }
 
     .Intro-details {
-      // Font
+      // Font/ Text Styling
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(med-low);
 
       // Spacing
+      margin: 1rem 0rem;
+    }
+
+    .fa-chevron-down {
+      // Spacing
+      margin: 1rem 0 0 0;
+      padding: 0rem 0 0 0;
     }
   }
 }

@@ -1,17 +1,92 @@
 @import "_base.scss";
 
-@media (max-width: 680px) {
+.Scroll-group {
+  font-family: $Poppins;
+  color: $primary-color;
+  margin: 1rem 0 0 0;
+  text-decoration: none;
+}
+
+.fa-chevron-down {
+  font-size: size(regular);
+  color: $primary-color;
+  margin: 1rem 0 0 0;
+}
+
+.Scroll-Text {
+  color: $primary-color;
+  font-weight: weight(regular);
+}
+
+@media (min-width: 1500px) {
+  .Scroll-group {
+    display: none;
+  }
+}
+@media (max-width: 1500px) {
   .fa-chevron-down {
-    font-size: size(regular);
-    color: $primary-color;
+    font-size: size(med-large);
+    margin: 1rem 0 0 0;
+  }
+
+  .Scroll-Text {
+    font-size: size(medium);
+    font-weight: weight(medium);
     margin: 1rem 0 0 0;
   }
 }
+/* ______________ Mid-size tablet Screen Size */
+@media (max-width: 1100px) {
+  .fa-chevron-down {
+    font-size: size(med-large);
+    margin: 1rem 0 0 0;
+  }
+
+  .Scroll-Text {
+    font-size: size(medium);
+    font-weight: weight(medium);
+    margin: 1rem 0 0 0;
+  }
+}
+
+/* ______________  iPad / Tablet Screen size */
+@media (max-width: 868px) {
+  .fa-chevron-down {
+    font-size: size(regular);
+    margin: 1rem 0 0 0;
+  }
+
+  .Scroll-Text {
+    font-size: size(medium);
+    font-weight: weight(medium);
+    margin: 1rem 0 0 0;
+  }
+}
+
+/* ______________ Larger Phones Screen size */
+@media (max-width: 680px) {
+  .fa-chevron-down {
+    font-size: size(regular);
+    margin: 1rem 0 0 0;
+  }
+
+  .Scroll-Text {
+    font-size: size(small);
+    margin: 1rem 0 0 0;
+  }
+}
+
+/* ______________ Smaller Phones Screen size */
 @media (max-width: 380px) {
   .fa-chevron-down {
     // Fonts
     font-size: size(regular);
-    color: $primary-color;
+    // Spacing
+    margin: 0;
+  }
 
+  .Scroll-Text {
+    font-size: size(xtra-small);
+    margin: 1rem 0 0 0;
   }
 }

@@ -63,7 +63,7 @@
   list-style: none;
 }
 .menu-list li a{
-  color: #1b1b1b;
+  color: $white;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -91,14 +91,26 @@
   .content{
     padding: 0 60px;
   }
+  .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
 }
 // Laptop Screen Size
 @media (max-width: 1100px) {
   .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .content{
     padding: 0 40px;
   }
+
+  // NAV LIST ITEMS ______
   .menu-list li a{
-    color: #1b1b1b;
+    color: $white;
   }
 
   .cancel-btn {
