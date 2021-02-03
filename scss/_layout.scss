@@ -8,7 +8,8 @@ html {
 
 .Intro {
   // Spacing
-  padding: 0;
+  text-align: center;
+  padding: 12rem 1rem 10rem;
 
   color: $white;
   background: $black;
@@ -46,44 +47,44 @@ html {
   }
 }
 
-@media (min-width: 1500px) {
-  .Intro {
-    // Using F l e x to arrange the elements in rows
-    display: flex;
-    flex-wrap: wrap;
-  }
+// @media (min-width: 1500px) {
+//   .Intro {
+//     // Using F l e x to arrange the elements in rows
+//     display: flex;
+//     flex-wrap: nowrap;
+//   }
 
-  .Intro-content {
-    // margin outside
-    // padding inside
-    padding: 30rem 0 0 0;
-    // background: rgb(67, 128, 186);
-  }
+//   .Intro-content {
+//     // margin outside
+//     // padding inside
+//     padding: 30rem 0 0 0;
+//     background: rgb(67, 128, 186);
+//   }
 
-  .Intro-name {
-    /* Used Background colors to Visualize the sizes of the elements
-     in other words, used them to solve a problem in which the elements would be located in weird places */
-    padding: 1rem 5rem 1rem 10rem;
-    // background: rgb(143, 39, 39);
-  }
+//   .Intro-name {
+//     /* Used Background colors to Visualize the sizes of the elements
+//      in other words, used them to solve a problem in which the elements would be located in weird places */
+//     padding: 1rem 5rem 1rem 10rem;
+//     background: rgb(143, 39, 39);
+//   }
 
-  .Intro-job {
-    // Font
-    padding: 1rem 5rem 1rem 10rem;
-    // background: rgb(213, 121, 34);
-  }
+//   .Intro-job {
+//     // Font
+//     padding: 1rem 5rem 1rem 10rem;
+//     background: rgb(213, 121, 34);
+//   }
 
-  .Intro-details {
-    // Font
-    padding: 1rem 5rem 1rem 10rem;
-    // background: rgb(89, 202, 108);
-  }
+//   .Intro-details {
+//     // Font
+//     padding: 1rem 5rem 1rem 10rem;
+//     background: rgb(89, 202, 108);
+//   }
 
-  .Intro-img {
-    padding: 0 0 10rem 0;
-    // background: rgb(219, 240, 223);
-  }
-}
+//   .Intro-img {
+//     padding: 0 0 10rem 0;
+//     background: rgb(219, 240, 223);
+//   }
+// }
 
 /* ______________ Laptop / iPad Pro Screen Size */
 @media (max-width: 1500px) {

@@ -302,7 +302,8 @@ html {
 
 /* __ I n t r o - S e c t i o n ______________________________ */
 .Intro {
-  padding: 0;
+  text-align: center;
+  padding: 12rem 1rem 10rem;
   color: whitesmoke;
   background: #1b1b1b;
 }
@@ -331,33 +332,6 @@ html {
 .Intro .Intro-img {
   width: 50%;
   height: auto;
-}
-
-@media (min-width: 1500px) {
-  .Intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .Intro-content {
-    padding: 30rem 0 0 0;
-  }
-  .Intro-name {
-    /* Used Background colors to Visualize the sizes of the elements
-     in other words, used them to solve a problem in which the elements would be located in weird places */
-    padding: 1rem 5rem 1rem 10rem;
-  }
-  .Intro-job {
-    padding: 1rem 5rem 1rem 10rem;
-  }
-  .Intro-details {
-    padding: 1rem 5rem 1rem 10rem;
-  }
-  .Intro-img {
-    padding: 0 0 10rem 0;
-  }
 }
 
 /* ______________ Laptop / iPad Pro Screen Size */
