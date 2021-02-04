@@ -77,7 +77,7 @@
 }
 
 .navbar .logo a {
-  color: whitesmoke;
+  color: #713eff;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
@@ -108,7 +108,7 @@
 }
 
 .icon {
-  color: whitesmoke;
+  color: #713eff;
   font-size: 25px;
   cursor: pointer;
   display: none;
@@ -208,6 +208,7 @@
 /* Typography ______________________________ */
 /* Google Font API ______________________________ */
 /* Typography ______________________________ */
+/* __ S c r o l l -G r o u p ______________________________ */
 .Scroll-group {
   font-family: "Poppins", sans-serif;
   color: #713eff;
@@ -296,6 +297,7 @@
 /* Typography ______________________________ */
 html {
   scroll-behavior: smooth;
+  background: #ecf0f3;
 }
 
 /* __ I n t r o - S e c t i o n ______________________________ */
@@ -323,7 +325,7 @@ html {
 .Intro .Intro-details {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
-  font-weight: 550;
+  font-weight: 300;
   margin: 1rem 0;
 }
 
@@ -496,6 +498,182 @@ html {
 }
 
 /* __ P r o j e c t - S e c t i o n ______________________________ */
+.Cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.Card-svg {
+  width: 30%;
+  height: auto;
+}
+
+.Card {
+  color: #2b2b2b;
+  background: #ecf0f3;
+  -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+          box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+}
+
+/* ______________ Laptop / iPad Pro Screen Size */
+/* ______________ Mid-size tablet Screen Size */
+/* ______________  iPad / Tablet Screen size */
+@media (max-width: 868px) {
+  .Cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .Card {
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    text-align: left;
+  }
+  .Card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .Card-text-container {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .Card-svg {
+    width: 50%;
+    height: auto;
+  }
+  .Button-div {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 2rem 0 0 0;
+  }
+  .Button-div .Card-button-link {
+    color: whitesmoke;
+    background: #713eff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 0 1rem 0 0;
+  }
+}
+
+/* ______________ Larger Phones Screen size */
+@media (max-width: 680px) {
+  .Cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .Card {
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    text-align: left;
+  }
+  .Card-svg {
+    width: 100%;
+    height: auto;
+  }
+  .Button-div {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 2rem 0 0 0;
+  }
+  .Button-div .Card-button-link {
+    color: whitesmoke;
+    background: #713eff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 0 1rem 0 0;
+  }
+}
+
+/* ______________ Smaller Phones Screen size */
+@media (max-width: 380px) {
+  .Cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .Card {
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    text-align: left;
+  }
+  .Card-svg {
+    width: 100%;
+    height: auto;
+  }
+  .Button-div {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 2rem 0 0 0;
+  }
+  .Button-div .Card-button-link {
+    color: whitesmoke;
+    background: #713eff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 0 1rem 0 0;
+  }
+}
+
 /* __ A b o u t - S e c t i o n __________________________________ */
 /* __ C o n t a c t - S e c t i o n ______________________________ */
 /*# sourceMappingURL=main.css.map */

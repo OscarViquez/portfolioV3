@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: $whiteBG;
 }
 
 /* __ I n t r o - S e c t i o n ______________________________ */
@@ -13,6 +14,7 @@ html {
 
   color: $white;
   background: $black;
+  // border-radius: 0 0 20px 20px;
 
   .Intro-name {
     // Font
@@ -36,7 +38,7 @@ html {
     // Font
     font-family: $Poppins;
     font-size: size(medium);
-    font-weight: weight(medium);
+    font-weight: weight(med-low);
     // Spacing
     margin: 1rem 0;
   }
@@ -48,7 +50,6 @@ html {
     // background: rgb(219, 240, 223);
   }
 }
-
 
 /* ______________ Laptop / iPad Pro Screen Size */
 @media (max-width: 1500px) {
@@ -275,6 +276,195 @@ html {
   }
 }
 /* __ P r o j e c t - S e c t i o n ______________________________ */
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.Card-svg {
+  width: 30%;
+  height: auto;
+}
+
+.Card {
+  // Colors
+  color: $black2;
+  background: $whiteBG;
+  box-shadow: $shadow2;
+  // Display
+  display: flex;
+  border-radius: 15px;
+}
+
+.Card-1 {
+  // background: $red;
+}
+
+.Card-2 {
+  // background: $yellow;
+}
+.Card-3 {
+  // background: $green;
+}
+/* ______________ Laptop / iPad Pro Screen Size */
+
+/* ______________ Mid-size tablet Screen Size */
+
+/* ______________  iPad / Tablet Screen size */
+@media (max-width: 868px) {
+  .Cards {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+
+  .Card {
+    // Spacing
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    // Text Layout
+    text-align: left;
+  }
+
+  .Card-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .Card-text-container {
+    // background: $red;
+    align-self: flex-end;
+  }
+
+  .Card-svg {
+    width: 50%;
+    height: auto;
+
+    // background: $blue;
+  }
+
+  .Card-title {
+    // background: $purple4;
+  }
+
+  .Card-description {
+    // background: $yellow;
+  }
+
+  .Button-div {
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 2rem 0 0 0;
+
+    // background: $green;
+
+    .Card-button-link {
+      color: $white;
+      background: $primary-color;
+
+      text-decoration: none;
+      text-align: center;
+
+      border-radius: 50%;
+
+      padding: 10px 15px;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
+
+/* ______________ Larger Phones Screen size */
+@media (max-width: 680px) {
+  .Cards {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+
+  .Card {
+    // Spacing
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    // Text Layout
+    text-align: left;
+  }
+
+  .Card-svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .Button-div {
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 2rem 0 0 0;
+
+    .Card-button-link {
+      color: $white;
+      background: $primary-color;
+
+      text-decoration: none;
+      text-align: center;
+
+      border-radius: 50%;
+
+      padding: 10px 15px;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
+
+/* ______________ Smaller Phones Screen size */
+@media (max-width: 380px) {
+  .Cards {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+
+  .Card {
+    // Spacing
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    // Text Layout
+    text-align: left;
+  }
+
+  .Card-svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .Button-div {
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 2rem 0 0 0;
+
+    .Card-button-link {
+      color: $white;
+      background: $primary-color;
+
+      text-decoration: none;
+      text-align: center;
+
+      border-radius: 50%;
+
+      padding: 10px 15px;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
 
 /* __ A b o u t - S e c t i o n __________________________________ */
 
