@@ -223,13 +223,8 @@
 
 .Scroll-Text {
   color: #713eff;
+  font-size: 25px;
   font-weight: 400;
-}
-
-@media (min-width: 1500px) {
-  .Scroll-group {
-    display: none;
-  }
 }
 
 @media (max-width: 1500px) {
@@ -284,6 +279,9 @@
 
 /* ______________ Smaller Phones Screen size */
 @media (max-width: 380px) {
+  .Scroll-group {
+    display: none;
+  }
   .fa-chevron-down {
     font-size: 35px;
     margin: 0;
@@ -330,7 +328,7 @@ html {
 }
 
 .Intro .Intro-img {
-  width: 50%;
+  width: 30%;
   height: auto;
 }
 

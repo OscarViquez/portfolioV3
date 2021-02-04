@@ -15,14 +15,10 @@
 
 .Scroll-Text {
   color: $primary-color;
+  font-size: size(medium);
   font-weight: weight(regular);
 }
 
-@media (min-width: 1500px) {
-  .Scroll-group {
-    display: none;
-  }
-}
 @media (max-width: 1500px) {
   .fa-chevron-down {
     font-size: size(med-large);
@@ -78,6 +74,10 @@
 
 /* ______________ Smaller Phones Screen size */
 @media (max-width: 380px) {
+  .Scroll-group {
+    display: none;
+  }
+
   .fa-chevron-down {
     // Fonts
     font-size: size(regular);
