@@ -402,12 +402,20 @@ html {
     // background: $blue;
   }
 
+  .Card-title {
+    font-size: size(medium);
+  }
+
+  .Card-description {
+    font-size: size(xtra-small);
+  }
+
   .Button-div {
     margin: 2rem 0 0 0;
-    font-size: size(small);
     // background: $green;
 
     .Card-button-link {
+      font-size: size(small);
       border-radius: 50%;
 
       padding: 10px 15px;
@@ -445,9 +453,15 @@ html {
   .Card-svg {
     width: 50%;
     height: auto;
-
   }
 
+  .Card-title {
+    font-size: size(regular);
+  }
+
+  .Card-description {
+    font-size: size(small);
+  }
 
   .Button-div {
     list-style: none;
@@ -465,6 +479,7 @@ html {
 
       text-decoration: none;
       text-align: center;
+      font-size: size(medium);
 
       border-radius: 50%;
 
@@ -495,10 +510,19 @@ html {
     height: auto;
   }
 
+  .Card-title {
+    font-size: size(medium);
+  }
+
+  .Card-description {
+    font-size: size(xtra-small);
+  }
+
   .Button-div {
     margin: 2rem 0 0 0;
 
     .Card-button-link {
+      font-size: size(medium);
       border-radius: 50%;
 
       padding: 10px 15px;
@@ -528,10 +552,19 @@ html {
     height: auto;
   }
 
+  .Card-title {
+    font-size: size(medium);
+  }
+
+  .Card-description {
+    font-size: size(xtra-small);
+  }
+
   .Button-div {
     margin: 2rem 0 0 0;
 
     .Card-button-link {
+      font-size: size(xtra-small);
       border-radius: 50%;
 
       padding: 10px 15px;
@@ -542,9 +575,77 @@ html {
 
 /* __ A b o u t - S e c t i o n __________________________________ */
 .About {
-  background: $black2;
+  background: $black;
   color: $white;
 
-  padding: 5rem 2rem;
+  padding: 10rem 3rem;
+}
+
+.About-title {
+  font-size: size(med-large);
+}
+
+.About-description {
+  font-size: size(medium);
+}
+
+@media (max-width: 1500px) {
+  .About-title {
+    font-size: size(regular);
+  }
+
+  .About-description {
+    font-size: size(small);
+  }
+}
+
+@media (max-width: 868px) {
+  .About-title {
+    font-size: size(regular);
+  }
+
+  .About-description {
+    font-size: size(small);
+  }
+}
+
+@media (max-width: 340px) {
+  .About {
+    padding: 6rem 3rem;
+  }
 }
 /* __ C o n t a c t - S e c t i o n ______________________________ */
+
+.Contact {
+  background: $black;
+  color: $white;
+
+  padding: 10rem 3rem 20rem 3rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.Contact-title {
+  font-size: size(med-large);
+}
+.Contact-list_div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.Contact-icons {
+  color: inherit;
+  font-size: size(regular);
+  padding: 0 1rem 0 0;
+}
+
+@media (max-width: 1100px) {
+  .Contact {
+    padding: 10rem 3rem 20rem 3rem;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .Contact-icons {
+    padding: 1rem 1rem 0 0;
+  }
+}
