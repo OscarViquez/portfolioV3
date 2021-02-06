@@ -56,6 +56,11 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+.navbar .logo a:hover{
+  color: $purple4;
+}
+
 .navbar .menu-list{
   display: inline-flex;
 }
@@ -63,15 +68,15 @@
   list-style: none;
 }
 .menu-list li a{
-  color: $white;
-  font-size: 18px;
+  color: $purple2;
+  font-size: 20px;
   font-weight: 500;
   margin-left: 25px;
   text-decoration: none;
   transition: all 0.1s ease;
 }
 .menu-list li a:hover{
-  color: #713eff;
+  color: $purple4;
 }
 
 .icon{

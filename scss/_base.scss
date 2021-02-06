@@ -14,6 +14,7 @@ $font-weights: (
 
 //font-size
 $font-size: (
+  "xx-small": 14px,
   "xtra-small": 16px,
   "small": 20px,
   "medium": 25px,
@@ -43,9 +44,9 @@ $Poppins: "Poppins", sans-serif;
 $primary-color: #713eff;
 
 $purple1: #3500d3;
-$purple2: #5a189a;
+$purple2: #7c57eb;
 $purple3: #ecf0f3;
-$purple4: #c77dff;
+$purple4: #9d85e6;
 
 $white: rgb(245, 245, 245);
 $whiteBG:  #ecf0f3;
@@ -61,3 +62,4 @@ $blue: #85b5e9;
 $shadow: 0.125em 0.125em 0.5em #303030, 0.125em 0.125em 0.5em #303030;
 $shadow2: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
 $shadow3: 15px 10px 5px -10px rgba(30, 30, 60, 0.4);
+

@@ -4,7 +4,6 @@
 /* Typography ______________________________ */
 @import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -83,6 +82,10 @@
   text-decoration: none;
 }
 
+.navbar .logo a:hover {
+  color: #9d85e6;
+}
+
 .navbar .menu-list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -94,8 +97,8 @@
 }
 
 .menu-list li a {
-  color: whitesmoke;
-  font-size: 18px;
+  color: #7c57eb;
+  font-size: 20px;
   font-weight: 500;
   margin-left: 25px;
   text-decoration: none;
@@ -104,7 +107,7 @@
 }
 
 .menu-list li a:hover {
-  color: #713eff;
+  color: #9d85e6;
 }
 
 .icon {
@@ -206,93 +209,6 @@
 
 /* Google Font API ______________________________ */
 /* Typography ______________________________ */
-/* Google Font API ______________________________ */
-/* Typography ______________________________ */
-/* __ S c r o l l -G r o u p ______________________________ */
-.Scroll-group {
-  font-family: "Poppins", sans-serif;
-  color: #713eff;
-  margin: 1rem 0 0 0;
-  text-decoration: none;
-}
-
-.fa-chevron-down {
-  font-size: 35px;
-  color: #713eff;
-  margin: 1rem 0 0 0;
-}
-
-.Scroll-Text {
-  color: #713eff;
-  font-size: 25px;
-  font-weight: 400;
-}
-
-@media (max-width: 1500px) {
-  .fa-chevron-down {
-    font-size: 45px;
-    margin: 1rem 0 0 0;
-  }
-  .Scroll-Text {
-    font-size: 25px;
-    font-weight: 550;
-    margin: 1rem 0 0 0;
-  }
-}
-
-/* ______________ Mid-size tablet Screen Size */
-@media (max-width: 1100px) {
-  .fa-chevron-down {
-    font-size: 45px;
-    margin: 1rem 0 0 0;
-  }
-  .Scroll-Text {
-    font-size: 25px;
-    font-weight: 550;
-    margin: 1rem 0 0 0;
-  }
-}
-
-/* ______________  iPad / Tablet Screen size */
-@media (max-width: 868px) {
-  .fa-chevron-down {
-    font-size: 35px;
-    margin: 1rem 0 0 0;
-  }
-  .Scroll-Text {
-    font-size: 25px;
-    font-weight: 550;
-    margin: 1rem 0 0 0;
-  }
-}
-
-/* ______________ Larger Phones Screen size */
-@media (max-width: 680px) {
-  .fa-chevron-down {
-    font-size: 35px;
-    margin: 1rem 0 0 0;
-  }
-  .Scroll-Text {
-    font-size: 20px;
-    margin: 1rem 0 0 0;
-  }
-}
-
-/* ______________ Smaller Phones Screen size */
-@media (max-width: 380px) {
-  .Scroll-group {
-    display: none;
-  }
-  .fa-chevron-down {
-    font-size: 35px;
-    margin: 0;
-  }
-  .Scroll-Text {
-    font-size: 16px;
-    margin: 1rem 0 0 0;
-  }
-}
-
 /* Google Font API ______________________________ */
 /* Typography ______________________________ */
 html {
@@ -458,7 +374,7 @@ html {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    margin: 1rem 0rem;
+    margin: 1rem 0 0 0;
   }
   .Intro .Intro-details .fa-chevron-down {
     margin: 1rem 0 0 0;
@@ -480,7 +396,7 @@ html {
   }
   .Intro .Intro-job {
     font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 550;
     color: #713eff;
     margin: 1rem 0rem;
@@ -514,6 +430,7 @@ html {
           flex-flow: row nowrap;
   padding: 10rem 0;
   background: #ecf0f3;
+  border-radius: 20px;
 }
 
 .Card {
@@ -521,8 +438,8 @@ html {
   background: #ecf0f3;
   -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
           box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-  padding: 2rem 3rem 5rem 3rem;
-  margin: 0 3em;
+  padding: 2rem 3rem 5rem 2rem;
+  margin: 0 3rem;
   border-radius: 15px;
 }
 
@@ -532,15 +449,15 @@ html {
 }
 
 .Card-text-container {
-  padding: 2rem 1rem;
+  padding: 0;
 }
 
 .Card-title {
-  font-size: 45px;
+  font-size: 25px;
 }
 
 .Card-description {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .Button-div {
@@ -559,15 +476,15 @@ html {
   background: #713eff;
   text-decoration: none;
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
           box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
   border-radius: 50%;
-  padding: 8px 15px;
+  padding: 8px 13px;
   margin: 0 1rem 0 0;
 }
 
-/* ______________ Laptop / iPad Pro Screen Size */
+/* ____________________________ Laptop / iPad Pro Screen Size */
 @media (max-width: 1500px) {
   .Cards {
     -webkit-box-align: center;
@@ -602,7 +519,7 @@ html {
   }
 }
 
-/* ______________ Mid-size tablet Screen Size */
+/* ____________________________ Mid-size tablet Screen Size */
 @media (max-width: 1100px) {
   .Cards {
     -webkit-box-align: center;
@@ -615,7 +532,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    padding: 3rem 0 3rem 0;
+    padding: 3rem 0;
   }
   .Card {
     padding: 2rem 25px 4rem 25px;
@@ -625,6 +542,9 @@ html {
   .Card-svg {
     width: 100%;
     height: auto;
+  }
+  .Card-text-container {
+    padding: 0;
   }
   .Card-title {
     font-size: 25px;
@@ -643,7 +563,7 @@ html {
   }
 }
 
-/* ______________  iPad / Tablet Screen size */
+/* ____________________________  iPad / Tablet Screen size */
 @media (max-width: 868px) {
   .Cards {
     -webkit-box-align: center;
@@ -656,6 +576,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
+    padding: 3rem 4rem;
   }
   .Card {
     padding: 2rem 25px 4rem 25px;
@@ -671,6 +592,9 @@ html {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  .Card-3 {
+    margin-bottom: 5rem;
+  }
   .Card-text-container {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -678,6 +602,7 @@ html {
   .Card-svg {
     width: 50%;
     height: auto;
+    margin-left: 8rem;
   }
   .Card-title {
     font-size: 35px;
@@ -707,7 +632,7 @@ html {
   }
 }
 
-/* ______________ Larger Phones Screen size */
+/* ____________________________ Larger Phones Screen size */
 @media (max-width: 680px) {
   .Cards {
     -webkit-box-align: center;
@@ -720,6 +645,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    padding: 3rem 0;
   }
   .Card {
     padding: 2rem 25px 4rem 25px;
@@ -729,6 +655,7 @@ html {
   .Card-svg {
     width: 100%;
     height: auto;
+    margin-left: 0rem;
   }
   .Card-title {
     font-size: 25px;
@@ -747,7 +674,7 @@ html {
   }
 }
 
-/* ______________ Smaller Phones Screen size */
+/* ____________________________ Smaller Phones Screen size */
 @media (max-width: 380px) {
   .Cards {
     -webkit-box-align: center;
@@ -760,21 +687,26 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    padding: 3rem 0;
   }
   .Card {
-    padding: 2rem 25px 4rem 25px;
+    padding: 1rem 20px 4rem 20px;
     margin: 1.5rem;
     text-align: left;
   }
   .Card-svg {
     width: 100%;
     height: auto;
+    margin: 0;
+  }
+  .Card-text-container {
+    padding: 0rem;
   }
   .Card-title {
     font-size: 25px;
   }
   .Card-description {
-    font-size: 16px;
+    font-size: 14px;
   }
   .Button-div {
     margin: 2rem 0 0 0;
@@ -795,11 +727,11 @@ html {
 }
 
 .About-title {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .About-description {
-  font-size: 25px;
+  font-size: 16px;
 }
 
 @media (max-width: 1500px) {
@@ -812,6 +744,9 @@ html {
 }
 
 @media (max-width: 868px) {
+  .About {
+    padding: 15rem 3rem;
+  }
   .About-title {
     font-size: 35px;
   }
@@ -820,9 +755,15 @@ html {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 380px) {
   .About {
-    padding: 6rem 3rem;
+    padding: 10rem 3rem;
+  }
+  .About-title {
+    font-size: 25px;
+  }
+  .About-description {
+    font-size: 16px;
   }
 }
 
@@ -836,7 +777,12 @@ html {
 }
 
 .Contact-title {
-  font-size: 45px;
+  font-size: 35px;
+}
+
+.Contact-description {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .Contact-list_div {
@@ -857,12 +803,41 @@ html {
 
 @media (max-width: 1100px) {
   .Contact {
-    padding: 10rem 3rem 20rem 3rem;
+    padding: 0rem 3rem 20rem 3rem;
     text-decoration: none;
     list-style: none;
   }
   .Contact-icons {
     padding: 1rem 1rem 0 0;
+  }
+  .Contact-description {
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 868px) {
+  .Contact-title {
+    font-size: 35px;
+  }
+  .Contact-description {
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .Contact {
+    background: #1b1b1b;
+    padding: 10rem 2rem 20rem 3rem;
+  }
+  .Contact-title {
+    font-size: 25px;
+    margin: 0 0 1rem 0;
+  }
+  .Contact-description {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 1rem 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
