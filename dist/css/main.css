@@ -297,7 +297,7 @@
 /* Typography ______________________________ */
 html {
   scroll-behavior: smooth;
-  background: #ecf0f3;
+  background: #1b1b1b;
 }
 
 /* __ I n t r o - S e c t i o n ______________________________ */
@@ -367,7 +367,7 @@ html {
 @media (max-width: 1250px) {
   .Intro {
     text-align: center;
-    padding: 12rem 1rem 10rem;
+    padding: 12rem 1rem 5rem;
   }
   .Intro .Intro-name {
     font-family: "Poppins", sans-serif;
@@ -502,18 +502,18 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-}
-
-.Card-svg {
-  width: 30%;
-  height: auto;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 10rem 0;
+  background: #ecf0f3;
 }
 
 .Card {
@@ -521,14 +521,122 @@ html {
   background: #ecf0f3;
   -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
           box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 2rem 3rem 5rem 3rem;
+  margin: 0 3em;
   border-radius: 15px;
 }
 
+.Card-svg {
+  width: 100%;
+  height: auto;
+}
+
+.Card-text-container {
+  padding: 2rem 1rem;
+}
+
+.Card-title {
+  font-size: 45px;
+}
+
+.Card-description {
+  font-size: 20px;
+}
+
+.Button-div {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 2rem 0 0 0;
+}
+
+.Card-button-link {
+  color: whitesmoke;
+  background: #713eff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 35px;
+  -webkit-box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+          box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  border-radius: 50%;
+  padding: 8px 15px;
+  margin: 0 1rem 0 0;
+}
+
 /* ______________ Laptop / iPad Pro Screen Size */
+@media (max-width: 1500px) {
+  .Cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding: 3rem 0 3rem 0;
+  }
+  .Card {
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    text-align: left;
+  }
+  .Card-svg {
+    width: 100%;
+    height: auto;
+  }
+  .Button-div {
+    margin: 2rem 0 0 0;
+    font-size: 20px;
+  }
+  .Button-div .Card-button-link {
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 0 1rem 0 0;
+  }
+}
+
 /* ______________ Mid-size tablet Screen Size */
+@media (max-width: 1100px) {
+  .Cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding: 3rem 0 3rem 0;
+  }
+  .Card {
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    text-align: left;
+  }
+  .Card-svg {
+    width: 100%;
+    height: auto;
+  }
+  .Button-div {
+    margin: 2rem 0 0 0;
+    font-size: 20px;
+  }
+  .Button-div .Card-button-link {
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 0 1rem 0 0;
+  }
+}
+
 /* ______________  iPad / Tablet Screen size */
 @media (max-width: 868px) {
   .Cards {
@@ -610,20 +718,9 @@ html {
     height: auto;
   }
   .Button-div {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     margin: 2rem 0 0 0;
   }
   .Button-div .Card-button-link {
-    color: whitesmoke;
-    background: #713eff;
-    text-decoration: none;
-    text-align: center;
     border-radius: 50%;
     padding: 10px 15px;
     margin: 0 1rem 0 0;
@@ -654,20 +751,9 @@ html {
     height: auto;
   }
   .Button-div {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     margin: 2rem 0 0 0;
   }
   .Button-div .Card-button-link {
-    color: whitesmoke;
-    background: #713eff;
-    text-decoration: none;
-    text-align: center;
     border-radius: 50%;
     padding: 10px 15px;
     margin: 0 1rem 0 0;
@@ -675,5 +761,11 @@ html {
 }
 
 /* __ A b o u t - S e c t i o n __________________________________ */
+.About {
+  background: #2b2b2b;
+  color: whitesmoke;
+  padding: 5rem 2rem;
+}
+
 /* __ C o n t a c t - S e c t i o n ______________________________ */
 /*# sourceMappingURL=main.css.map */

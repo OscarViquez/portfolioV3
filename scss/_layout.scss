@@ -2,7 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: $whiteBG;
+  background: $black;
 }
 
 /* __ I n t r o - S e c t i o n ______________________________ */
@@ -14,7 +14,7 @@ html {
 
   color: $white;
   background: $black;
-  // border-radius: 0 0 20px 20px;
+  // border-radius: 0 0 50px 50px;
 
   .Intro-name {
     // Font
@@ -95,7 +95,7 @@ html {
   .Intro {
     // Spacing
     text-align: center;
-    padding: 12rem 1rem 10rem;
+    padding: 12rem 1rem 5rem;
 
     .Intro-name {
       // Font/ Text Styling
@@ -279,13 +279,12 @@ html {
 
 .Cards {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-flow: column wrap;
-}
+  flex-flow: row nowrap;
+  padding: 10rem 0;
 
-.Card-svg {
-  width: 30%;
-  height: auto;
+  background: $whiteBG;
 }
 
 .Card {
@@ -294,23 +293,128 @@ html {
   background: $whiteBG;
   box-shadow: $shadow2;
   // Display
-  display: flex;
+  padding: 2rem 3rem 5rem 3rem;
+  margin: 0 3em;
+
   border-radius: 15px;
 }
 
-.Card-1 {
-  // background: $red;
+.Card-svg {
+  width: 100%;
+  height: auto;
 }
 
-.Card-2 {
-  // background: $yellow;
+.Card-text-container {
+  padding: 2rem 1rem;
 }
-.Card-3 {
-  // background: $green;
+
+.Card-title {
+  font-size: size(med-large);
 }
+
+.Card-description {
+  font-size: size(small);
+}
+
+.Button-div {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 2rem 0 0 0;
+}
+
+.Card-button-link {
+  color: $white;
+  background: $primary-color;
+
+  text-decoration: none;
+  text-align: center;
+  font-size: size(regular);
+
+  box-shadow: $shadow2;
+
+  border-radius: 50%;
+
+  padding: 8px 15px;
+  margin: 0 1rem 0 0;
+}
+
 /* ______________ Laptop / iPad Pro Screen Size */
+@media (max-width: 1500px) {
+  .Cards {
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    padding: 3rem 0 3rem 0;
+  }
 
+  .Card {
+    // Spacing
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    // Text Layout
+    text-align: left;
+  }
+
+  .Card-svg {
+    width: 100%;
+    height: auto;
+
+    // background: $blue;
+  }
+
+  .Button-div {
+    margin: 2rem 0 0 0;
+    font-size: size(small);
+    // background: $green;
+
+    .Card-button-link {
+      border-radius: 50%;
+
+      padding: 10px 15px;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
 /* ______________ Mid-size tablet Screen Size */
+@media (max-width: 1100px) {
+  .Cards {
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    padding: 3rem 0 3rem 0;
+  }
+
+  .Card {
+    // Spacing
+    padding: 2rem 25px 4rem 25px;
+    margin: 1.5rem;
+    // Text Layout
+    text-align: left;
+  }
+
+  .Card-svg {
+    width: 100%;
+    height: auto;
+
+    // background: $blue;
+  }
+
+  .Button-div {
+    margin: 2rem 0 0 0;
+    font-size: size(small);
+    // background: $green;
+
+    .Card-button-link {
+      border-radius: 50%;
+
+      padding: 10px 15px;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
 
 /* ______________  iPad / Tablet Screen size */
 @media (max-width: 868px) {
@@ -342,16 +446,8 @@ html {
     width: 50%;
     height: auto;
 
-    // background: $blue;
   }
 
-  .Card-title {
-    // background: $purple4;
-  }
-
-  .Card-description {
-    // background: $yellow;
-  }
 
   .Button-div {
     list-style: none;
@@ -400,20 +496,9 @@ html {
   }
 
   .Button-div {
-    list-style: none;
-
-    display: flex;
-    justify-content: flex-start;
-
     margin: 2rem 0 0 0;
 
     .Card-button-link {
-      color: $white;
-      background: $primary-color;
-
-      text-decoration: none;
-      text-align: center;
-
       border-radius: 50%;
 
       padding: 10px 15px;
@@ -444,20 +529,9 @@ html {
   }
 
   .Button-div {
-    list-style: none;
-
-    display: flex;
-    justify-content: flex-start;
-
     margin: 2rem 0 0 0;
 
     .Card-button-link {
-      color: $white;
-      background: $primary-color;
-
-      text-decoration: none;
-      text-align: center;
-
       border-radius: 50%;
 
       padding: 10px 15px;
@@ -467,5 +541,10 @@ html {
 }
 
 /* __ A b o u t - S e c t i o n __________________________________ */
+.About {
+  background: $black2;
+  color: $white;
 
+  padding: 5rem 2rem;
+}
 /* __ C o n t a c t - S e c t i o n ______________________________ */
