@@ -90,6 +90,7 @@ html {
     }
   }
 }
+/* ____________________________ iPad Pro Screen Size */
 @media (max-width: 1250px) {
   .Intro {
     // Spacing
@@ -99,25 +100,25 @@ html {
     .Intro-name {
       // Font/ Text Styling
       font-family: $Poppins;
-      font-size: size(large);
+      font-size: size(med-large);
       font-weight: weight(medium);
     }
 
     .Intro-job {
       // Font/ Text Styling
       font-family: $Poppins;
-      font-size: size(med-large);
+      font-size: size(regular);
       font-weight: weight(medium);
       color: $primary-color;
       // Spacing
-      margin: 1rem 0rem;
+      margin: 1rem 0r 0 0;
       // Spacing
     }
 
     .Intro-details {
       // Font/ Text Styling
       font-family: $Poppins;
-      font-size: size(medium);
+      font-size: size(small);
       font-weight: weight(med-low);
       // Spacing
       margin: 1rem 0rem;
@@ -177,12 +178,6 @@ html {
       // Spacing
       margin: 1rem 0rem;
     }
-
-    .fa-chevron-down {
-      // Spacing
-      margin: 1rem 0 0 0;
-      padding: 0rem 0 0 0;
-    }
   }
 }
 
@@ -220,12 +215,6 @@ html {
 
       // Spacing
       margin: 1rem 0 0 0;
-
-      .fa-chevron-down {
-        // Spacing
-        margin: 1rem 0 0 0;
-        padding: 0rem 0 0 0;
-      }
     }
   }
 
@@ -264,12 +253,6 @@ html {
 
         // Spacing
         margin: 1rem 0rem;
-
-        .fa-chevron-down {
-          // Spacing
-          margin: 1rem 0 0 0;
-          padding: 0rem 0 0 0;
-        }
       }
     }
   }
@@ -566,12 +549,10 @@ html {
     width: 100%;
     height: auto;
     margin: 0;
-
   }
 
   .Card-text-container {
     padding: 0rem;
-    
   }
 
   .Card-title {
@@ -595,12 +576,16 @@ html {
   }
 }
 
-/* __ A b o u t - S e c t i o n __________________________________ */
+/* __ A b o u t - S e c t i o n ____________________________________________________________________ */
+
 .About {
   background: $black;
   color: $white;
 
   padding: 10rem 3rem;
+  
+
+  text-align: center;
 }
 
 .About-title {
@@ -608,9 +593,17 @@ html {
 }
 
 .About-description {
-  font-size: size(xtra-small);
+  font-size: size(small);
+
+  // margin: 0 10rem;
 }
 
+/* ____________________________ Laptop / iPad Pro Screen Size */
+@media (min-width: 1600px) {
+  .About-description {
+    margin: 0 10rem;
+  }
+}
 @media (max-width: 1500px) {
   .About-title {
     font-size: size(regular);
@@ -621,6 +614,7 @@ html {
   }
 }
 
+/* ____________________________ Mid-size tablet Screen Size */
 @media (max-width: 868px) {
   .About {
     padding: 15rem 3rem;
@@ -632,12 +626,14 @@ html {
 
   .About-description {
     font-size: size(small);
+    font-weight: weight(low);
   }
 }
 
+/* ____________________________ Smaller Phones Screen size */
 @media (max-width: 380px) {
   .About {
-    padding: 10rem 3rem;
+    padding: 10rem 2rem;
   }
 
   .About-title {
@@ -648,15 +644,17 @@ html {
     font-size: size(xtra-small);
   }
 }
-/* __ C o n t a c t - S e c t i o n ______________________________ */
+/* __ C o n t a c t - S e c t i o n ____________________________________________________________  */
 
 .Contact {
-  background: $black;
-  color: $white;
+  background: $whiteBG;
 
-  padding: 10rem 3rem 20rem 3rem;
+  border-radius: 20px;
+  padding: 10rem 3rem 10rem 3rem;
+
   text-decoration: none;
   list-style: none;
+  text-align: center;
 }
 
 .Contact-title {
@@ -671,18 +669,31 @@ html {
 .Contact-list_div {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
+
 .Contact-icons {
   color: inherit;
   font-size: size(regular);
   padding: 0 1rem 0 0;
 
-  
+  .fa-instagram {
+    color: $insta;
+  }
+
+  .fa-linkedin {
+    color: $linkeden;
+  }
+
+  .fa-github-square {
+    color: $black2;
+  }
 }
 
+/* ____________________________ Laptop / iPad Pro Screen Size / Mid-size tablet Screen Size */
 @media (max-width: 1100px) {
   .Contact {
-    padding: 0rem 3rem 20rem 3rem;
+    padding: 10rem 1rem 20rem 1rem;
     text-decoration: none;
     list-style: none;
   }
@@ -697,6 +708,9 @@ html {
 }
 
 @media (max-width: 868px) {
+  .Contact {
+    padding: 10rem 1rem 20rem 1rem;
+  }
   .Contact-title {
     font-size: size(regular);
   }
@@ -709,8 +723,7 @@ html {
 
 @media (max-width: 380px) {
   .Contact {
-    background: $black;
-    padding: 10rem 2rem 20rem 3rem;
+    padding: 10rem 1rem 20rem 1rem;
   }
   .Contact-title {
     font-size: size(medium);
@@ -722,4 +735,8 @@ html {
     font-weight: weight(med-low);
     margin: 0 0 1rem 0;
   }
+
+  // .Contact-list_div {
+  //  align-items: center;
+  // }
 }

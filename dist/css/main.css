@@ -1,9 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 /* Google Font API ______________________________ */
 @import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Typography ______________________________ */
+/* ____________________________ Laptop / iPad Pro Screen Size */
+/* ____________________________ Mid-size tablet Screen Size */
+/* ____________________________  iPad / Tablet Screen size */
+/* ____________________________ Larger Phones Screen size */
+/* ____________________________ Smaller Phones Screen size */
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.fa-instagram {
+  color: #bc2a8d;
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+}
+
+.Card-button:hover a {
+  background: #7c57eb;
+  -webkit-box-shadow: 15px 10px 5px -10px rgba(30, 30, 60, 0.4);
+          box-shadow: 15px 10px 5px -10px rgba(30, 30, 60, 0.4);
+}
+
+/* Google Font API ______________________________ */
+/* Typography ______________________________ */
+/* ____________________________ Laptop / iPad Pro Screen Size */
+/* ____________________________ Mid-size tablet Screen Size */
+/* ____________________________  iPad / Tablet Screen size */
+/* ____________________________ Larger Phones Screen size */
+/* ____________________________ Smaller Phones Screen size */
+/* Google Font API ______________________________ */
+/* Typography ______________________________ */
+/* ____________________________ Laptop / iPad Pro Screen Size */
+/* ____________________________ Mid-size tablet Screen Size */
+/* ____________________________  iPad / Tablet Screen size */
+/* ____________________________ Larger Phones Screen size */
+/* ____________________________ Smaller Phones Screen size */
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +117,7 @@
 }
 
 .navbar .logo a:hover {
-  color: #9d85e6;
+  color: #ccbdfa;
 }
 
 .navbar .menu-list {
@@ -107,7 +141,7 @@
 }
 
 .menu-list li a:hover {
-  color: #9d85e6;
+  color: #ccbdfa;
 }
 
 .icon {
@@ -144,7 +178,7 @@
     padding: 0 40px;
   }
   .menu-list li a {
-    color: whitesmoke;
+    color: #7c57eb;
   }
   .cancel-btn {
     color: #fff;
@@ -156,7 +190,7 @@
     padding: 0 30px;
   }
   .menu-list li a {
-    color: #fff;
+    color: #7c57eb;
   }
 }
 
@@ -209,8 +243,11 @@
 
 /* Google Font API ______________________________ */
 /* Typography ______________________________ */
-/* Google Font API ______________________________ */
-/* Typography ______________________________ */
+/* ____________________________ Laptop / iPad Pro Screen Size */
+/* ____________________________ Mid-size tablet Screen Size */
+/* ____________________________  iPad / Tablet Screen size */
+/* ____________________________ Larger Phones Screen size */
+/* ____________________________ Smaller Phones Screen size */
 html {
   scroll-behavior: smooth;
   background: #1b1b1b;
@@ -280,6 +317,7 @@ html {
   }
 }
 
+/* ____________________________ iPad Pro Screen Size */
 @media (max-width: 1250px) {
   .Intro {
     text-align: center;
@@ -287,19 +325,19 @@ html {
   }
   .Intro .Intro-name {
     font-family: "Poppins", sans-serif;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 550;
   }
   .Intro .Intro-job {
     font-family: "Poppins", sans-serif;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 550;
     color: #713eff;
-    margin: 1rem 0rem;
+    margin: 1rem 0r 0 0;
   }
   .Intro .Intro-details {
     font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     margin: 1rem 0rem;
   }
@@ -345,10 +383,6 @@ html {
     font-weight: 300;
     margin: 1rem 0rem;
   }
-  .Intro .fa-chevron-down {
-    margin: 1rem 0 0 0;
-    padding: 0rem 0 0 0;
-  }
 }
 
 /* ______________ Larger Phones Screen size */
@@ -376,10 +410,6 @@ html {
     font-weight: 300;
     margin: 1rem 0 0 0;
   }
-  .Intro .Intro-details .fa-chevron-down {
-    margin: 1rem 0 0 0;
-    padding: 0rem 0 0 0;
-  }
   /* ______________ Smaller Phones Screen size */
 }
 
@@ -406,10 +436,6 @@ html {
     font-size: 16px;
     font-weight: 300;
     margin: 1rem 0rem;
-  }
-  .Intro .Intro-details .fa-chevron-down {
-    margin: 1rem 0 0 0;
-    padding: 0rem 0 0 0;
   }
 }
 
@@ -719,11 +745,12 @@ html {
   }
 }
 
-/* __ A b o u t - S e c t i o n __________________________________ */
+/* __ A b o u t - S e c t i o n ____________________________________________________________________ */
 .About {
   background: #1b1b1b;
   color: whitesmoke;
   padding: 10rem 3rem;
+  text-align: center;
 }
 
 .About-title {
@@ -731,7 +758,14 @@ html {
 }
 
 .About-description {
-  font-size: 16px;
+  font-size: 20px;
+}
+
+/* ____________________________ Laptop / iPad Pro Screen Size */
+@media (min-width: 1600px) {
+  .About-description {
+    margin: 0 10rem;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -743,6 +777,7 @@ html {
   }
 }
 
+/* ____________________________ Mid-size tablet Screen Size */
 @media (max-width: 868px) {
   .About {
     padding: 15rem 3rem;
@@ -752,12 +787,14 @@ html {
   }
   .About-description {
     font-size: 20px;
+    font-weight: 200;
   }
 }
 
+/* ____________________________ Smaller Phones Screen size */
 @media (max-width: 380px) {
   .About {
-    padding: 10rem 3rem;
+    padding: 10rem 2rem;
   }
   .About-title {
     font-size: 25px;
@@ -767,13 +804,14 @@ html {
   }
 }
 
-/* __ C o n t a c t - S e c t i o n ______________________________ */
+/* __ C o n t a c t - S e c t i o n ____________________________________________________________  */
 .Contact {
-  background: #1b1b1b;
-  color: whitesmoke;
-  padding: 10rem 3rem 20rem 3rem;
+  background: #ecf0f3;
+  border-radius: 20px;
+  padding: 10rem 3rem 10rem 3rem;
   text-decoration: none;
   list-style: none;
+  text-align: center;
 }
 
 .Contact-title {
@@ -793,6 +831,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Contact-icons {
@@ -801,9 +842,22 @@ html {
   padding: 0 1rem 0 0;
 }
 
+.Contact-icons .fa-instagram {
+  color: #bc2a8d;
+}
+
+.Contact-icons .fa-linkedin {
+  color: #0e76a8;
+}
+
+.Contact-icons .fa-github-square {
+  color: #2b2b2b;
+}
+
+/* ____________________________ Laptop / iPad Pro Screen Size / Mid-size tablet Screen Size */
 @media (max-width: 1100px) {
   .Contact {
-    padding: 0rem 3rem 20rem 3rem;
+    padding: 10rem 1rem 20rem 1rem;
     text-decoration: none;
     list-style: none;
   }
@@ -816,6 +870,9 @@ html {
 }
 
 @media (max-width: 868px) {
+  .Contact {
+    padding: 10rem 1rem 20rem 1rem;
+  }
   .Contact-title {
     font-size: 35px;
   }
@@ -827,8 +884,7 @@ html {
 
 @media (max-width: 380px) {
   .Contact {
-    background: #1b1b1b;
-    padding: 10rem 2rem 20rem 3rem;
+    padding: 10rem 1rem 20rem 1rem;
   }
   .Contact-title {
     font-size: 25px;
