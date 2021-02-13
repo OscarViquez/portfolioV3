@@ -13,3 +13,6 @@ Intro Section:
 Projects Section: 
 -Make layout
 -will use flex box
+
+Quick Fix:
+-make media query that increases font size when after 2100px
