@@ -110,9 +110,9 @@
 }
 
 .navbar .logo a {
-  color: #713eff;
+  color: #7c57eb;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -190,7 +190,7 @@
     padding: 0 30px;
   }
   .menu-list li a {
-    color: #7c57eb;
+    color: whitesmoke;
   }
 }
 
@@ -250,7 +250,7 @@
 /* ____________________________ Smaller Phones Screen size */
 html {
   scroll-behavior: smooth;
-  background: #1b1b1b;
+  background: #2b2b2b;
 }
 
 /* __ I n t r o - S e c t i o n ______________________________ */
