@@ -20,10 +20,11 @@
 
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
 }
 ::-webkit-scrollbar-thumb {
     background: #4400ff;
+    border-radius: 20px;
 }
 ::selection{
   background: #4400ff;
